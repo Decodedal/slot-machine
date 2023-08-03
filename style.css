@@ -1,17 +1,24 @@
 body{
     text-align: center;
     display: flex;
-    border: 2px solid red;
     min-width: 100vw;
     min-height: 100vh;
     flex-direction: column;
     align-items:center ;
     gap: 2em;
+    background: linear-gradient(hsl(220deg, 80%, 80%), hsl(250deg, 80%, 80%));
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}   
+
+h1{
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .slot-container{
     border: 3px solid black;
     display: flex;
+    background-color: white;
 }
 
 .slot{
@@ -40,7 +47,6 @@ button:hover{
 .betting{
     display: flex;
     justify-content: space-evenly;
-    border: 1px solid red;
     width: 100%;
 }
 
@@ -52,4 +58,12 @@ button:hover{
 
 .controller{
     padding: .5em;
+}
+
+@media(max-width:600px){
+    .betting{
+        flex-direction: column;
+        align-items: center;
+        gap:2em;
+    }
 }
