@@ -1,0 +1,55 @@
+body{
+    text-align: center;
+    display: flex;
+    border: 2px solid red;
+    min-width: 100vw;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items:center ;
+    gap: 2em;
+}
+
+.slot-container{
+    border: 3px solid black;
+    display: flex;
+}
+
+.slot{
+    padding: 1.5em;
+    border: 1px solid black;
+}
+
+
+button{
+    background-color: red;
+    padding: 1em;
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+    font-size: large;
+    border: 1px solid red;
+}
+
+button:hover{
+    transform: scale(1.1);
+    color: red;
+    background-color: white;
+    transition: all .5s;
+}
+
+.betting{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid red;
+    width: 100%;
+}
+
+.bets{
+    display: flex;
+    align-items: center;
+    gap:.5em;
+}
+
+.controller{
+    padding: .5em;
+}
